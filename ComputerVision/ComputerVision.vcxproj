@@ -22,6 +22,16 @@
     <ClCompile Include="Chapter1.cpp" />
     <ClCompile Include="Chapter2.cpp" />
     <ClCompile Include="Chapter3.cpp" />
+    <ClCompile Include="Chapter7.cpp" />
+    <ClCompile Include="Chapter8.cpp" />
+    <ClCompile Include="Exercise1-2.cpp" />
+    <ClCompile Include="Exercise1-3.cpp" />
+    <ClCompile Include="Exercise1-4.cpp" />
+    <ClCompile Include="Exercise2-1.cpp" />
+    <ClCompile Include="Exercise2-2.cpp" />
+    <ClCompile Include="Exercise2-3.cpp" />
+    <ClCompile Include="Exercise2-4.cpp" />
+    <ClCompile Include="RussianPlate.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -110,6 +120,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
