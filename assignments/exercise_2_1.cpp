@@ -4,7 +4,7 @@ using namespace cv;
 using namespace std;
 
 int main() {
-    string path = "Resources/lynx-snow.png";
+    string path = "resources/lynx-snow.png";
     Mat img = imread(path);
     Mat imgIdentity, imgSharpening, imgEmboss;
 

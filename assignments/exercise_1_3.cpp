@@ -6,13 +6,13 @@
 using namespace cv;
 using namespace std;
 
-void main() {
+int main() {
 	Mat img(512, 700, CV_8UC3, Scalar(255, 255, 255)); // Scalar(B, G, R), OpenCV uses BGR
 
 	circle(img, Point(350, 256), 150, Scalar(0, 0, 255), FILLED);
-	
-	Scalar lineColor = Scalar(0, 0, 0);
-	int lineThickness = 10;
+
+	const auto lineColor = Scalar(0, 0, 0);
+	constexpr int lineThickness = 10;
 	line(img, Point(0, 0), Point(700, 512), lineColor, lineThickness);
 	line(img, Point(0, 512), Point(700, 0), lineColor, lineThickness);
 
@@ -21,4 +21,5 @@ void main() {
 
 	imshow("Image", img);
 	waitKey(0);
+	return 0;
 }

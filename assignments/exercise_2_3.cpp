@@ -6,12 +6,12 @@
 using namespace cv;
 using namespace std;
 
-void main() {
-	string path = "Resources/ball-stripes.png";
-	Mat img = imread(path);
+int main() {
+	const string path = "resources/ball-stripes.png";
+	const Mat img = imread(path);
 	Mat imgDilate, imgErode;
 
-	Mat kernel = getStructuringElement(MORPH_RECT, Size(29, 29));
+	const Mat kernel = getStructuringElement(MORPH_RECT, Size(29, 29));
 	dilate(img, imgDilate, kernel);
 	erode(imgDilate, imgErode, kernel);
 
@@ -19,4 +19,5 @@ void main() {
 	imshow("After Dilation", imgDilate);
 	imshow("After Erosion", imgErode);
 	waitKey(0);
+	return 0;
 }
